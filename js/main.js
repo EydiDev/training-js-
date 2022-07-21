@@ -107,3 +107,19 @@ console.log(bb)//6
 console.log("-----------------------")
  
 //math 
+let rand = Math.random()*100000;
+rand = Math.round(rand)
+console.log(rand)
+
+let rand1 = 533.6;
+let rand2 = 59.5;
+let rand3 = 59.5;
+
+rand1= Math.round(rand1)
+console.log(rand1)
+
+rand2 =Math.floor(rand2)
+console.log(rand2)
+
+rand3 =Math.ceil(rand3)
+console.log(rand3)
