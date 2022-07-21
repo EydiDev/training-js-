@@ -82,7 +82,13 @@ console.log(first || third ) // t v t
 console.log(sec || fourth) // f v f 
  
 console.log("-------------------")
-
+//karborde amalgar haye manteqi 
+let yek1 = true ;
+let do2 =  false ; 
+ if (yek1 ||  do2) {
+     document.getElementById("h2").innerHTML = "sdfsdf";
+     
+ }
 //entesabi  += , -= , *= , /= , %=
 
 let hh = 7 ;
@@ -99,5 +105,5 @@ bb%=hh;
 console.log(bb)//6
 
 console.log("-----------------------")
-
+ 
 //math 
