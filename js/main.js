@@ -125,6 +125,9 @@ rand3 =Math.ceil(rand3)
 console.log(rand3)
 
 console.log("-----------------------")
+
+//work with strings
+
 let asd = "Hello My Name Is Mohammad"
 let asd1 = asd.length;//in az 1 shoro mishe 
 console.log(asd1)
@@ -141,8 +144,32 @@ console.log(asd.includes("hello"))
 
 console.log("-----------------------")
 
+//template literals
+
 const nam = "mohammad";
 const massage = `hello ${nam} welcome!`;
 console.log(massage)
 
+console.log("-----------------------")
 
+//work with arrays 
+
+const newArray = ["mohammad" , "ali" , "reza" , "sajjad"]
+const newArray2 = ["zahra" , "fateme" , "mahshad" , "mahshid"]
+
+console.log(newArray)
+newArray.push("mahdi") //add in end 
+console.log(newArray)
+newArray.unshift("vahid") // add in first
+console.log(newArray)
+newArray.pop() //delete of end 
+console.log(newArray)
+newArray.shift() // delete of first
+console.log(newArray)
+newArray.splice(1,2) // delet az x be tedate y (x,y)
+console.log(newArray)
+newArray2.sort() // sort by abc 
+console.log(newArray2)
+
+const Array3 = [...newArray , ...newArray2 , "hello"] //spread operator
+console.log(Array3)
