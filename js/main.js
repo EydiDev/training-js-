@@ -214,3 +214,4 @@ console.log(asl[favorite3].rahnamai)
 console.log(asl[favorite3]["rahnamai"])
 
 
+console.log("-----------------------------")
