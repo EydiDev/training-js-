@@ -123,3 +123,26 @@ console.log(rand2)
 
 rand3 =Math.ceil(rand3)
 console.log(rand3)
+
+console.log("-----------------------")
+let asd = "Hello My Name Is Mohammad"
+let asd1 = asd.length;//in az 1 shoro mishe 
+console.log(asd1)
+console.log(asd[20 ])// az 0 shroo mishe shemordan 
+console.log(asd.toLowerCase())
+console.log(asd.toUpperCase())
+console.log(asd.lastIndexOf("N"))// inam az 0
+console.log(asd.charAt("24"))// inam az 0
+console.log(asd.substring(0 , 10))// ydone qabl az adad akhar o nehson mide 
+console.log(asd.split(" "))
+console.log(asd.replace("Mohammad" , "MAMAD"))
+console.log(asd.includes("Hello"))
+console.log(asd.includes("hello"))
+
+console.log("-----------------------")
+
+const nam = "mohammad";
+const massage = `hello ${nam} welcome!`;
+console.log(massage)
+
+
