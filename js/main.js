@@ -156,7 +156,7 @@ console.log("-----------------------")
 
 const newArray = ["mohammad" , "ali" , "reza" , "sajjad"]
 const newArray2 = ["zahra" , "fateme" , "mahshad" , "mahshid"]
-
+console.log(newArray[2])//برای صدا زدن عضو ارایه باید از Index استفاده کرد که از 0 شروع میشه شمردنش
 console.log(newArray)
 newArray.push("mahdi") //add in end 
 console.log(newArray)
@@ -186,3 +186,31 @@ added.sort()
 console.log(added)
 added.shift()
 console.log(added)
+
+console.log("-----------------------------")
+//objects
+
+const asl = {
+    
+    name : "mohammad" ,
+    family : "eydi" , 
+    age : 24 , 
+    famils : ["pedram" , "nahal"],//array in object
+    moadel: { //object in object
+        rahnamai : 20,
+        dabirestan : 18 
+    }
+}
+//this is how can we work with objects and arrays in objects
+const favorite = "name"
+const favorite2 = "famils"
+const favorite3 = "moadel"
+console.log(asl["family"])//برای صدا زدن از درون ابجکت به کلید نیاز داریم 
+console.log(asl.name)//این طوری هم میتونیم صدا بزنیم با کلید ولی این روش و بالایی تفاوتی دارد 
+console.log(asl.favorite)//undifined
+console.log(asl[favorite])//mohammad تفاوت در اینه 
+console.log(asl[favorite2][1])
+console.log(asl[favorite3].rahnamai)
+console.log(asl[favorite3]["rahnamai"])
+
+
