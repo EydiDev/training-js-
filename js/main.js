@@ -173,3 +173,16 @@ console.log(newArray2)
 
 const Array3 = [...newArray , ...newArray2 , "hello"] //spread operator
 console.log(Array3)
+
+console.log("-----------------------")
+
+//training 
+const namha = [["mamad" , "ali"] , ["reza" , "mahdi" , "sajjad"]] 
+const first1 = namha[0];
+const sec2 = namha[1]
+const added = [...first1 , ...sec2]
+console.log(added)
+added.sort()
+console.log(added)
+added.shift()
+console.log(added)
