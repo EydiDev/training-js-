@@ -215,3 +215,21 @@ console.log(asl[favorite3]["rahnamai"])
 
 
 console.log("-----------------------------")
+//training
+const data = { 
+    id : 1 ,
+    name : "mohammad" ,
+    username : "mamad" , 
+    email : "mmmmmmmmm@gmail.com" ,
+    adress : {
+        city : "isfahan",
+        street :"tohid sharqi",
+        zipcode : "9924365"
+    }
+}
+const nameOfData = data.name;
+const loc = data.adress.city;
+const street = data.adress.street;  // این روش گرفتن مقادیر از درون ابجکت یا ارایه
+//طول مبکشه به خاطر این که اگه با 20 تا دیتا بخوایم 20 خط باید بنویسیم و متغیر تعریف کنسم 
+const loog = `${nameOfData} lives in ${loc} his street name is ${street} `
+console.log(loog)
