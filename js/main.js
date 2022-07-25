@@ -235,10 +235,12 @@ const data = {
 // console.log(loog)
 
 
-//distructuring
+//destructuring
 const {namex , id , address} = data;
 const {city , street } = address;
 
 console.log(`hi ${namex} you live in ${city} in ${street} street `)
 
 //الان  با یک خط کد سه متغیر ر, گرفتیم 
+
+console.log("-----------------------------")
