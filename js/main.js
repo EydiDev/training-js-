@@ -206,7 +206,7 @@ const favorite = "name"
 const favorite2 = "famils"
 const favorite3 = "moadel"
 console.log(asl["family"])//برای صدا زدن از درون ابجکت به کلید نیاز داریم 
-console.log(asl.name)//این طوری هم میتونیم صدا بزنیم با کلید ولی این روش و بالایی تفاوتی دارد 
+console.log(asl.name)//روش بالایی و این روش وجود دارد که یک تفاوت دارند
 console.log(asl.favorite)//undifined
 console.log(asl[favorite])//mohammad تفاوت در اینه 
 console.log(asl[favorite2][1])
@@ -218,18 +218,27 @@ console.log("-----------------------------")
 //training
 const data = { 
     id : 1 ,
-    name : "mohammad" ,
+    namex : "mohammad" ,
     username : "mamad" , 
     email : "mmmmmmmmm@gmail.com" ,
-    adress : {
+    address : {
         city : "isfahan",
         street :"tohid sharqi",
         zipcode : "9924365"
     }
 }
-const nameOfData = data.name;
-const loc = data.adress.city;
-const street = data.adress.street;  // این روش گرفتن مقادیر از درون ابجکت یا ارایه
+// const nameOfData = data.name;
+// const loc = data.address.city;
+// const street = data.address.street;  // این روش گرفتن مقادیر از درون ابجکت یا ارایه
 //طول مبکشه به خاطر این که اگه با 20 تا دیتا بخوایم 20 خط باید بنویسیم و متغیر تعریف کنسم 
-const loog = `${nameOfData} lives in ${loc} his street name is ${street} `
-console.log(loog)
+// const loog = `${nameOfData} lives in ${loc} his street name is ${street} `
+// console.log(loog)
+
+
+//distructuring
+const {namex , id , address} = data;
+const {city , street } = address;
+
+console.log(`hi ${namex} you live in ${city} in ${street} street `)
+
+//الان  با یک خط کد سه متغیر ر, گرفتیم 
