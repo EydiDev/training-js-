@@ -236,11 +236,21 @@ const data = {
 
 
 //destructuring
-const {namex , id , address} = data;
-const {city , street } = address;
+const {namex , id , address:{city , street}} = data;
+//const {city , street } = address;
 
 console.log(`hi ${namex} you live in ${city} in ${street} street `)
 
-//الان  با یک خط کد سه متغیر ر, گرفتیم 
+//الان  با یک خط کد چندین متغیر ر, گرفتیم 
+//destructuring for arrays 
+
+const sazha = ['setar' , 'tar' , 'santoor']
+// const saz1 = sazha[0]
+// const saz2 = sazha[1]
+// const saz3 = sazha[2]
+
+
+const [saz1 , saz2 , saz3] = sazha ; 
+console.log(`we have ${saz1} and ${saz2} and ${saz3}`)
 
 console.log("-----------------------------")
