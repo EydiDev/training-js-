@@ -254,3 +254,8 @@ const [saz1 , saz2 , saz3] = sazha ;
 console.log(`we have ${saz1} and ${saz2} and ${saz3}`)
 
 console.log("-----------------------------")
+
+const keys = Object.keys(data)
+console.log(keys)
+const values = Object.values(data)
+console.log(values)
