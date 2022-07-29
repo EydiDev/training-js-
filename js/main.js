@@ -236,12 +236,12 @@ const data = {
 
 
 //destructuring
-const {namex , id , address:{city , street}} = data;
+const {namex , id , address:{city , street}} = data;//الان  با یک خط کد چندین متغیر ر, گرفتیم 
 //const {city , street } = address;
 
 console.log(`hi ${namex} you live in ${city} in ${street} street `)
 
-//الان  با یک خط کد چندین متغیر ر, گرفتیم 
+
 //destructuring for arrays 
 
 const sazha = ['setar' , 'tar' , 'santoor']
@@ -254,8 +254,31 @@ const [saz1 , saz2 , saz3] = sazha ;
 console.log(`we have ${saz1} and ${saz2} and ${saz3}`)
 
 console.log("-----------------------------")
-
+//this is how can we get keys and values of object
 const keys = Object.keys(data)
 console.log(keys)
 const values = Object.values(data)
 console.log(values)
+
+console.log("-----------------------------")
+//change types 
+const str = "5.5"
+const str2 = "mmd"
+const num = 4
+const num2 = 4.25
+const arr = ["2" , 4 , 5]
+const obj = {
+    name : "rez" ,
+    famil : "rafee"
+}
+console.log(parseInt(str))
+console.log(parseFloat(str))
+console.log(+str) //+ change type of String to Number
+console.log(typeof Number(str) , Number(str))
+console.log(typeof Number(str2) , Number(str2))
+console.log(typeof String(arr) , String(arr))
+console.log(typeof String(num) , String(num))
+console.log(typeof String(num2) , String(num2))
+console.log(typeof String(obj) , String(obj))
+console.log(num2.toFixed(2))//tabdil num be str va hazf aashar magar inke dar () tedad ashar morede niaz neveshte shavad
+console.log("-----------------------------")
