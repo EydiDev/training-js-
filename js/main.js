@@ -282,3 +282,24 @@ console.log(typeof String(num2) , String(num2))
 console.log(typeof String(obj) , String(obj))
 console.log(num2.toFixed(2))//tabdil num be str va hazf aashar magar inke dar () tedad ashar morede niaz neveshte shavad
 console.log("-----------------------------")
+//if , else , else if 
+const adad = 70; 
+if (adad >=10 && adad<=20) {
+    console.log("your number isbetween 10 and 20")
+}else if (adad<10){
+    console.log("your number is smaller than 10 ")
+}else if (adad > 20 && adad <50){
+   console.log("your number is greater than 20") 
+}else{console.log("your number is something else")}
+
+//or
+const adad2 = 20 ; 
+if (adad2 > 30 || adad2< 20) {
+    console.log("ok")
+}else{console.log("no ok ")}
+
+//ternary operator 
+const adad3 = 5;
+adad3 == 10 ? console.log("your number is 10") : console.log("your number isnt 10")
+
+console.log("-----------------------------")
