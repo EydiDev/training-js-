@@ -305,10 +305,28 @@ adad3 == 10 ? console.log("your number is 10") : console.log("your number isnt 1
 console.log("-----------------------------")
 
 //alert , prompt , confirm
-alert("in the name of god ")
-const sen = prompt("how old are you?")
-if (sen > 18) {
-   const areYouOk =  confirm("you can open this site are you ready ?")
+// alert("in the name of god ")
+// const sen = prompt("how old are you?")
+// if (sen > 18) {
+//    const areYouOk =  confirm("you can open this site are you ready ?")
   
     
-}else {alert("you cant open this site")}
+// }else {alert("you cant open this site")}
+
+//switch
+const vol  = 10 ; 
+switch (vol) {
+    case 10:
+        console.log("sound is low ");
+        break;
+    case 20:
+        console.log("sound is medium ");
+        break;
+    case 30:
+        console.log("sound is high ");
+        break;
+
+    default:
+        console.break("bad")
+        break;
+}
