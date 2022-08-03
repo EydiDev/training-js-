@@ -303,3 +303,12 @@ const adad3 = 5;
 adad3 == 10 ? console.log("your number is 10") : console.log("your number isnt 10")
 
 console.log("-----------------------------")
+
+//alert , prompt , confirm
+alert("in the name of god ")
+const sen = prompt("how old are you?")
+if (sen > 18) {
+   const areYouOk =  confirm("you can open this site are you ready ?")
+  
+    
+}else {alert("you cant open this site")}
