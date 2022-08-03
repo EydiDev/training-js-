@@ -330,3 +330,15 @@ switch (vol) {
         console.break("bad")
         break;
 }
+// loops 
+let i ; 
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  if (i === 5) {
+      console.log("you find   5");
+      continue;
+      console.log("haha");
+      
+  }
+    }
+//بریک دستور را ازونجا به بعد متوقف میکنه اما کنتینیو میبره از بالا دووباره شروع میکنه
