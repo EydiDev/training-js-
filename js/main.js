@@ -360,3 +360,22 @@ do {
 } while (ziz <=20);
 // تفاوت وایل و دو وایل در این است که در اولی اگر شرط برقرار نباشه دستور اجرا نمیشه اما  در دومی یکبار اجرا میشه دیگه نمیشه 
 
+console.log("-----------------------------")
+//functions
+
+const funArray = [20 , 18 , 12 , 10]
+
+function sum(fun) {
+let ek = 0 ; 
+    for (let i = 0; i < fun.length; i++) {
+      ek += fun[i];  
+    }
+    let hesabed = ek /  fun.length
+    if (hesabed > 15) {
+        console.log("قبول شدی ");
+    }
+    else{console.log("قبول نشدی");}
+    console.log(hesabed)
+
+  }
+  sum(funArray);
