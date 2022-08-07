@@ -397,4 +397,13 @@ let ek = 0 ;
     console.log(`hello i want to tell you a secret ${text} all one`);
    }
   newFun("we are");
-  console.log("-----------------------------")
+
+  console.log("-----------------------------");
+  
+  //IIFE فانکشن هایی که نیاز به صدا زدن برای اجرا ندارند
+  //به فانکشن هایی که نام ندارند را انونیموس فانکشن میگویند
+  (function () { 
+      console.log("hhhhhhiiiiii!!!!!!");
+   })();
+
+   //
