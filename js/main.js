@@ -379,3 +379,22 @@ let ek = 0 ;
 
   }
   sum(funArray);
+
+  console.log("-----------------------------")
+
+  function jam(x , y , z=70) { 
+        const jamshode = (x + y) *z
+        return jamshode;
+
+   }
+
+  const hesab= jam(50 , 30 ,);
+  console.log(hesab);
+
+  console.log("-----------------------------")
+
+  const newFun = function raz(text) { 
+    console.log(`hello i want to tell you a secret ${text} all one`);
+   }
+  newFun("we are");
+  console.log("-----------------------------")
