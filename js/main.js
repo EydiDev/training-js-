@@ -440,3 +440,26 @@ for (let item in $Object) {
    console.log($Object[item]);
         
 }
+console.log("-----------------------------");
+//foreach در فورایچ تغییرات در همان متغیر ذخیره میوند 
+const $NAMES = ["mohammad" , "alireza" , "taha" ]
+//                            \/ this is arrow function
+$NAMES.forEach((items, index) => {
+    $NAMES[index] = items.toUpperCase();
+ console.log(items , index);   
+});
+//                    this is normal function 
+$NAMES.forEach(function (araueha , index) { 
+    console.log(araueha , index);  
+ })
+ console.log($NAMES);
+ console.log("-----------------------------");
+//map در مپ تغییرات در یک متغیر دیگر ذخیره میشوند
+
+const $names = ["ahmad" , "ali" , "sara"]
+const newNAME = $names.map(item =>
+    item.toUpperCase()
+)
+console.log(newNAME)
+console.log($names)
+
