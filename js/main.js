@@ -401,9 +401,42 @@ let ek = 0 ;
   console.log("-----------------------------");
   
   //IIFE فانکشن هایی که نیاز به صدا زدن برای اجرا ندارند
-  //به فانکشن هایی که نام ندارند را انونیموس فانکشن میگویند
+  // فانکشن هایی که نام ندارند را انونیموس فانکشن میگویند
   (function () { 
       console.log("hhhhhhiiiiii!!!!!!");
    })();
 
-   //
+//arrow functions 
+const arrowFunction = (a , b) => a+b+10 ;
+console.log(arrowFunction(5,10));
+
+
+console.log("-----------------------------");
+
+//in ba halqe for ast hala badi mesal hamin tamrine 
+const $Array = [1 , 2 , 3 , 4 , 5]
+for (let i = 0; i < $Array.length; i++) {
+    console.log($Array[i])
+    
+}
+//for of  حلقه زئن روی ارایه    => Array
+for (const item of $Array) {
+    console.log(item);
+}
+
+console.log("-----------------------------");
+//in ba halqe for be dast amad dar paiin raveshe jadide 
+const $Object = {name : "mohammad" , family : "eydi" , age : 21 }
+let aaaa = Object.keys($Object)
+console.log(aaaa);
+for (let i = 0; i < aaaa.length; i++) {
+   
+    console.log($Object[aaaa[i]]);
+    
+}
+
+//for in  حلقه زدن روی ابجکت    => object
+for (let item in $Object) {
+   console.log($Object[item]);
+        
+}
