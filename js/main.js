@@ -463,3 +463,17 @@ const newNAME = $names.map(item =>
 console.log(newNAME)
 console.log($names)
 
+console.log("-----------------------------");
+
+//filter , find , reduce 
+//filter
+let ARRAY = [2 , 20 , 5 , 13 , 9 , 10];
+let filteredARRAY = ARRAY.filter(item => item >10); 
+console.log(filteredARRAY)//[20 , 13]
+//find it return just one item
+let findeed = ARRAY.find(item => item % 3 === 0 )
+console.log(findeed);//9
+//reduce 
+let red = ARRAY.reduce((pool , curr) => pool + curr  ,0);
+console.log(red);
+// pool = pool +curr ,  pool =0
