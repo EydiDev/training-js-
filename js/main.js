@@ -477,3 +477,25 @@ console.log(findeed);//9
 let red = ARRAY.reduce((pool , curr) => pool + curr  ,0);
 console.log(red);
 // pool = pool +curr ,  pool =0
+
+console.log("-----------------------------");
+
+//BOM  = browser object model 
+//window 
+console.log(window.outerHeight);
+console.log(innerHeight);
+console.log(outerWidth);
+console.log(window.innerWidth);
+console.log(window.screen.width);
+console.log(screen.height);
+console.log(location);
+console.log(navigator);
+console.log(window.document);
+
+console.log("-----------------------------");
+
+//dom
+console.log(document.all.length);
+console.log(document.title);
+
+console.log("-----------------------------");
