@@ -25,3 +25,11 @@ console.log(secDiv);
 document.getElementsByClassName("anchor")[0].style.color = "red"
 console.log();
 
+//childs and parents 
+const ul = document.querySelector("ul")
+console.log(ul.children);
+console.log(ul.lastElementChild);
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling);
+ul.lastElementChild.style.color="red"
+console.log(ul.parentElement);
