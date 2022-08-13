@@ -56,3 +56,36 @@ const lastdiv = document.getElementById("lastDiv")
 console.log(lastdiv);
 lastdiv.removeChild(lastdiv.children[0]);
 // lastdiv.remove()
+
+console.log("----------------------------")
+
+//events
+const buttons = document.querySelectorAll("button");
+buttons.forEach(item => {
+    item.addEventListener("click" , function (event) {
+        console.log(`${event.target.id} button clicked`);
+      })
+});
+const eventsbut = document.getElementById("events")
+const but1 = document.getElementById("1")
+but1.addEventListener("click" , function (item) {
+   const newEl = document.createElement("h1")
+   newEl.innerText= "hello how are you"
+   newEl.style.backgroundColor="red"
+    eventsbut.appendChild(newEl)
+  })
+
+  const but2 = document.getElementById("2");
+  but2.addEventListener("contextmenu" , function (e) { //rightclick
+    console.log(e);
+      e.preventDefault();
+      const rrr = document.createElement("h1")
+      rrr.innerText= "hello how are you"
+      rrr.style.backgroundColor="red"
+       eventsbut.appendChild(rrr)
+   })
+   const but3 = document.getElementById("3");
+   but3.addEventListener("click", function (e) {
+       but3.setAttribute("style" , "width : 100px ; height:50px ; background-color : yellow ; color :red")
+     })
+
