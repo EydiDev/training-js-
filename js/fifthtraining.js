@@ -3,6 +3,7 @@ const sd = document.querySelectorAll(".showDisplay")
 const ac = document.querySelector(".all-clear")
 const calc = document.querySelector(".calculator")
 const cl = document.querySelector(".clear-last")
+const div = document.getElementById("container")
 
 sd.forEach(item => {
     item.addEventListener("click", function (e) {
@@ -32,3 +33,11 @@ cl.addEventListener("click", function (e) {
     }
   })
   console.log(displayBox.value);
+   const body = document.firstChild
+    console.log(body);
+  body.addEventListener("contextmenu" , function (e) {
+      e.preventDefault()
+    })
+    console.log(window.document);
+
+ 
