@@ -89,3 +89,21 @@ but1.addEventListener("click" , function (item) {
        but3.setAttribute("style" , "width : 100px ; height:50px ; background-color : yellow ; color :red")
      })
 
+const inputlis = document.getElementById("inp");
+// inputlis.addEventListener("keydown" , function (e) {
+//     console.log(e.key);
+
+//   })
+
+
+inputlis.addEventListener("copy" , function (e) {
+
+    console.log("copied");
+
+  })
+inputlis.addEventListener("keydown" , function (e) {
+if (e.key === "Enter") {
+    console.log(" f touched");
+}
+
+  })
