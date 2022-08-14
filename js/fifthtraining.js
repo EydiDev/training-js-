@@ -19,7 +19,7 @@ ac.addEventListener("click" , function (e) {
     displayBox.value = "";
 })
 
-calc.addEventListener("click" , function (e) {
+calc.addEventListener("click" , function calckon(e) {
   let result = displayBox.value;
   displayBox.value = eval(result)
 
@@ -39,5 +39,14 @@ cl.addEventListener("click", function (e) {
       e.preventDefault()
     })
     console.log(window.document);
+
+    displayBox.addEventListener("keydown" , function (e) {
+        if (e.key === "Enter" ){
+            let result = displayBox.value;
+            displayBox.value = eval(result)
+        }
+         })
+       
+       
 
  
