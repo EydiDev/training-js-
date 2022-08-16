@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+        #header{
+            text-align: center;
+            font-family:    sans-serif;
+        }
+        .td{
+            width: 50px;
+            height: 50px;
+            border: solid black 1PX ;
+            border-radius: 10px;
+            text-align: center;
+            background-image: linear-gradient(rgb(255, 0, 0),rgb(0, 0, 0));
+     
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            cursor:pointer;
+        }
+        table{
+            margin: 0 auto 0;
+        }
+        #ax{
+            width: 200px;
+            margin-left: 400px;
+            background-color: rgb(195, 0, 39);
+            margin: 50 auto 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <span id="headSpan"><h1 >hangman</h1></span>
+    </div>
+    <div id="keyboard">
+        <table>
+            <tr>
+                <td class="td">A</td>
+                <td class="td">B</td>
+                <td class="td">C</td>
+                <td class="td">D</td>
+                <td class="td">E</td>
+                <td class="td">F</td>
+                <td class="td">G</td>
+                <td class="td">H</td>
+                <td class="td">I</td>
+                <td class="td">J</td>
+                <td class="td">K</td>
+                <td class="td">L</td>
+                <td class="td">M</td>
+            </tr>
+            <td class="td">N</td>
+            <td class="td">O</td>
+            <td class="td">P</td>
+            <td class="td">Q</td>
+            <td class="td">R</td>
+            <td class="td">S</td>
+            <td class="td">T</td>
+            <td class="td">U</td>
+            <td class="td">V</td>
+            <td class="td">W</td>
+            <td class="td">X</td>
+            <td class="td">Y</td>
+            <td class="td">Z</td>
+        </table>
+    </div>
+    <div id="axDiv">
+        <div id="ax">
+        <img src="../assets/hangman0.png" alt="hangman0">
+        </div>
+    </div>
+    <div id="word"><h1 id="W">_ _ _ _ _</h1></div>
+</body>
+</html>
