@@ -15,7 +15,7 @@ function selectRandomItem() {
         item.addEventListener("click" , buttonHandler)
         
     });
-   
+   window.addEventListener("keydown", keyHandler)
 }
 
 function letterHandler(letter) {
@@ -66,6 +66,11 @@ function buttonHandler(event) {
     console.log(event.target.innerText);
     
     
+}
+function keyHandler(event) {
+    
+    letterHandler(event.key.toUpperCase());
+    console.log(event.key);
 }
 
  selectRandomItem();
