@@ -1,0 +1,45 @@
+body{
+    background-color: #8785A2;
+    color: #355C7D;
+}
+#container{
+text-align: center;
+}
+#h1{
+    font-family: cursive;
+}
+#todoTextInput{
+    background-color:#eedddd;
+    width: 300px;
+    height: 50px;
+    border: solid 1px #FFE2E2;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
+    color: #355C7D;
+}
+#todoTextInput:focus{
+border:solid 5px #FFC7C7;
+background-color: #FFC7C7;
+}
+#sub{
+    width : 50px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFE2E2;
+    color: #355C7D;
+    
+    font-size: 20px;
+}#sub:hover{
+    background-color: #FFC7C7;
+}
+#select{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #FFE2E2;
+    border: none;
+    border-radius: 15px;
+    color: #355C7D;
+}
