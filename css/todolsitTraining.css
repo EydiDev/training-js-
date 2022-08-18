@@ -4,6 +4,8 @@ body{
 }
 #container{
 text-align: center;
+
+
 }
 #h1{
     font-family: cursive;
@@ -42,4 +44,19 @@ background-color: #FFC7C7;
     border: none;
     border-radius: 15px;
     color: #355C7D;
+}
+#list{
+
+
+}
+ul{
+    display: inline-block;
+}
+li{
+  text-align: left;
+    background-color: #9C9EFE;
+    margin: 5px;
+   list-style-type: none;
+   font-size: 20px;
+   padding:20px;
 }
