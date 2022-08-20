@@ -93,3 +93,7 @@ align-items: center;
     cursor: pointer;
 }
 
+.checked{
+    opacity: 35%;
+    text-decoration: line-through;
+}

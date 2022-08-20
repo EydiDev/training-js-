@@ -3,7 +3,7 @@ const ul = document.getElementById("ul")
 const text =  document.getElementById("todoTextInput");
 
 submit.addEventListener("click" , subclicked)
-
+ul.addEventListener("click" , deleteComplete)
 
 
 function subclicked() {
@@ -28,6 +28,19 @@ const deleteButton = document.createElement("button")
 deleteButton.innerHTML = "<i class='fa-solid fa-trash'></i>";
 deleteButton.classList.add("deleteButton")
 newElDiv.appendChild(deleteButton)
+}
+
+function deleteComplete(event) {
+    console.log(event.target);
+    const item = event.target;
+    if (item.className === "completeButton") {
+        wantChecked = item.previousSibling;
+        wantChecked.classList.toggle("checked")
+        
+    } else if(item.className === "deleteButton" || item.className === "fa-trash" ) {
+        const wantRemove = item.parentElement;
+        wantRemove.remove()
+    }
 }
 
 function todoSave(todo) {
