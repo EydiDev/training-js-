@@ -2,12 +2,13 @@ const submit = document.getElementById("sub");
 const ul = document.getElementById("ul")
 const text =  document.getElementById("todoTextInput");
 const slct = document.getElementById("select");
+const cls = document.getElementById("cls")
 
-
+cls.addEventListener("click" ,() => {localStorage.clear()  })
 submit.addEventListener("click" , subclicked)
 ul.addEventListener("click" , deleteComplete)
 slct.addEventListener("click" , filterTodo)
-
+document.addEventListener("DOMContentLoaded" , getTodos)
 function subclicked() {
  
  const newElDiv =   document.createElement("div");
@@ -109,13 +110,38 @@ todos.forEach(function (todo) {
          else{
               todo.style.display = "flex" ; }
             break;
-}
-       
+}})}
 
-   
-    
+function getTodos() {
+    let eve;
+    if (localStorage.getItem("todos")===null) {
+        eve = [];
+    }
+    else{
+        eve =JSON.parse( localStorage.getItem("todos"))
+    } console.log(eve);
+    eve.forEach( function (event) {  
+         const newElDiv =   document.createElement("div");
+ newElDiv.className= "newElDiv";
+ ul.appendChild(newElDiv)
 
- })
+ const newEl =   document.createElement("li");
+ newEl.className= "li";
+ newEl.innerText=event;
+ 
 
+ newElDiv.appendChild(newEl)
+
+
+const completedButton = document.createElement("button")
+completedButton.innerHTML = "<i class='fa-solid fa-check'></i>";
+completedButton.classList.add("completeButton")
+newElDiv.appendChild(completedButton)
+
+const deleteButton = document.createElement("button")
+deleteButton.innerHTML = "<i class='fa-solid fa-trash'></i>";
+deleteButton.classList.add("deleteButton")
+newElDiv.appendChild(deleteButton)
+    })
 
 }
