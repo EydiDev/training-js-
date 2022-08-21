@@ -1,10 +1,12 @@
 const submit = document.getElementById("sub");
 const ul = document.getElementById("ul")
 const text =  document.getElementById("todoTextInput");
+const slct = document.getElementById("select");
+
 
 submit.addEventListener("click" , subclicked)
 ul.addEventListener("click" , deleteComplete)
-
+slct.addEventListener("click" , filterTodo)
 
 function subclicked() {
  
@@ -34,10 +36,11 @@ newElDiv.appendChild(deleteButton)
 function deleteComplete(event) {
     console.log(event.target);
     const item = event.target;
-    
+    const ww = ul.childNodes;   
     if (item.className === "completeButton") {
         wantChecked = item.previousSibling;
         wantChecked.classList.toggle("checked")
+       item.parentElement.classList.toggle("completed")
         
     } else if(item.className === "deleteButton" || item.className === "fa-trash" ) {
         const wantRemove = item.parentElement;
@@ -80,4 +83,39 @@ function deleteSaves(item) {
    eve.splice(eve.indexOf(inner) ,1);
    localStorage.setItem("todos" , JSON.stringify(eve))
   
+}
+
+function filterTodo(event) {
+const todos = ul.childNodes;   
+let DIV = document.getElementById("ul")  
+todos.forEach(function (todo) { 
+  
+    switch(event.target.value){ 
+     case "all":
+        todo.style.display = "flex";
+        break;
+     case "completed":
+         if (todo.classList.contains("completed")) {
+             todo.style.display  = "flex";
+         }
+         else{
+              todo.style.display  = "none";
+         }
+         break;
+     case "uncompleted":
+           if (todo.classList.contains("completed")) {
+             todo.style.display  = "none";
+         }
+         else{
+              todo.style.display = "flex" ; }
+            break;
+}
+       
+
+   
+    
+
+ })
+
+
 }
