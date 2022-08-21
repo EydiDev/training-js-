@@ -32,7 +32,7 @@ background-color: #FFC7C7;
     border: none;
     background-color: #FFE2E2;
     color: #355C7D;
-    
+    cursor: pointer;
     font-size: 20px;
 }#sub:hover{
     background-color: #FFC7C7;
@@ -45,6 +45,7 @@ background-color: #FFC7C7;
     border: none;
     border-radius: 15px;
     color: #355C7D;
+    cursor: pointer;
 }
 
 #list{
@@ -66,7 +67,7 @@ align-items: center;
 
 }
 .li{
-    flex: 1;
+    flex:1;
     background-color: #9C9EFE;
     margin: 5px;
    font-size: 20px;
@@ -83,6 +84,8 @@ align-items: center;
     background-color: 3FA796;
     border: none;
    cursor: pointer;
+   width: 60px;
+   height: 60px;
 }
 .deleteButton{
     width: 35px;
@@ -90,10 +93,18 @@ align-items: center;
     margin-top: 5px;
     background-color: A10035;
     border: none;
-    cursor: pointer;
+    cursor: pointer; 
+    width: 60px;
+   height: 60px;
 }
 
 .checked{
     opacity: 35%;
     text-decoration: line-through;
+}
+#cls{
+    background-color: rgba(137, 43, 226, 0.356);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
 }
