@@ -7,8 +7,10 @@ const data = {
     number : 09219872433
 }
 
-// localStorage.setItem("Data" , JSON.stringify(data))
+//localStorage.setItem("Data" , JSON.stringify(data))
 
 const getedData = localStorage.getItem("Data")
+console.log(getedData);
 parsedData = JSON.parse(getedData)
 console.log(parsedData);
+localStorage.clear();
