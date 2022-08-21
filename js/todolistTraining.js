@@ -7,6 +7,7 @@ ul.addEventListener("click" , deleteComplete)
 
 
 function subclicked() {
+ 
  const newElDiv =   document.createElement("div");
  newElDiv.className= "newElDiv";
  ul.appendChild(newElDiv)
@@ -33,14 +34,21 @@ newElDiv.appendChild(deleteButton)
 function deleteComplete(event) {
     console.log(event.target);
     const item = event.target;
+    
     if (item.className === "completeButton") {
         wantChecked = item.previousSibling;
         wantChecked.classList.toggle("checked")
         
     } else if(item.className === "deleteButton" || item.className === "fa-trash" ) {
         const wantRemove = item.parentElement;
-        wantRemove.remove()
+       wantRemove.remove()
+
+     deleteSaves(event);
+        
     }
+
+
+
 }
 
 function todoSave(todo) {
@@ -53,4 +61,23 @@ function todoSave(todo) {
     }
     todos.push(todo)
     localStorage.setItem("todos" , JSON.stringify(todos))
+}
+
+function deleteSaves(item) {
+    let eve;
+    if (localStorage.getItem("todos")===null) {
+        todos = [];
+    }
+    else{
+        eve =JSON.parse( localStorage.getItem("todos"))
+    }
+   console.log(eve);
+  
+    const inner = event.target.parentElement.innerText;
+    
+    console.log(inner);
+   
+   eve.splice(eve.indexOf(inner) ,1);
+   localStorage.setItem("todos" , JSON.stringify(eve))
+  
 }
