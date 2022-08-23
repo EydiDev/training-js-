@@ -49,3 +49,36 @@ const userD = {
 console.log(name);
 console.log(age);
 console.log(Object.keys(userD));//ما دسترسی به مقادیری که با سیمبل تعریف کردیم نداریم
+
+//setInterval clearInterval & setTimeout clearTimeout
+
+const btn = document.querySelector("#start");
+const btn2 = document.querySelector("#end")
+btn.addEventListener("click" , func);
+btn2.addEventListener("click" , func2);
+
+
+
+function func() {
+   // setTimeout(()=>console.log("hello"),2000)
+  log =  setInterval(()=>console.log("hello"), 2000)
+}
+function func2() {
+    //clearTimeout
+    clearInterval(log)
+  }
+const div = document.querySelector("div")
+var indexNumber = 0;
+const colors = ["red" , "orange" , "yellow" , "green" , "blue" , "purple" , "white"]
+
+function colorChange() { 
+    div.style.backgroundColor= colors[indexNumber]
+ }
+
+ setInterval(()=>{
+    colorChange();
+    indexNumber++;
+    if (indexNumber == colors.length) {
+        indexNumber = 0;
+    }
+ },2000)
