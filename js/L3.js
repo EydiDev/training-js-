@@ -19,7 +19,13 @@ localStorage.clear();
 
 //Map this is diffrent with map ; Map is like object but we can set object for key
 const myMap = new Map(); 
-myMap.set( {name : "mohammad" , family : "eydi"}, 09219872433
-)   
-console.log(myMap);
+myMap.set( {name : "mohammad" , family : "eydi"}, 09219872433)   
+myMap.set([1,2]  , "numbers") 
+myMap.set(1 , 2)
+myMap.set("name" , "mohammad")
+myMap.delete("name")
+// myMap.clear()
+console.log(myMap.has(1));
+
+
 
