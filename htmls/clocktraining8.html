@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+  font-family: digital;
+  src: url(../digital-7.ttf);
+}
+        body{
+            background-color:#1a171d ;
+        }
+        #clock{
+            display: flex;
+            flex-direction:column;
+           text-align: center;
+           height:100% ;
+           align-items: center;
+           justify-content: center;
+        }
+        #h1 , H1{
+            
+            width: 150px;
+            border:2px solid #a13bd8;
+            padding: 30px;
+            border-radius: 50px;
+            box-shadow: #a135ff 0px 0px 30px;
+            text-shadow: #a135ff 0px 0px 30px;
+            font-family:digital;
+            color: #fdcfff;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <h1 id="h1">10:25:03</h1>
+        <h1 id="H1">10:25:03</h1>
+    </div>
+    <script src="../js/clocktraining8.js"></script>
+</body>
+</html>
