@@ -37,3 +37,15 @@ const lastSet =new Set([1,1,2,3,4,5,6,6,"w" , "z" , "z"  ,[5,6,7]]) ;
 lastSet.delete("z");
 console.log(lastSet);
 
+//Symbol  یک دیتا که هرکدوم از ان مفدار یونیک و یکتایی دارد
+const name = Symbol("name")
+const age = Symbol("age")
+
+const userD = {
+    name : "mohammad",
+    family : "eydi",
+    [age] : 21
+}
+console.log(name);
+console.log(age);
+console.log(Object.keys(userD));//ما دسترسی به مقادیری که با سیمبل تعریف کردیم نداریم
