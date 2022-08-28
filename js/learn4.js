@@ -84,12 +84,24 @@ function getUserAge() {
             resolve(
                 {age : 24});
         },2000)
-    })
-    
- }
+    })}
 
- getUserData()
- .then(data => getUserAge())
- .then(age =>console.log(age))
- console.log("3");
+//  getUserData()
+//  .then(data => getUserAge())
+//  .then(age =>console.log(age))
+//  setTimeout(() => {
+//      console.clear()
+//  }, 5000);
+
+ //async await
+ async function ebe() { 
+     const data = await getUserData()
+     const age = await getUserAge().then(data => console.log(data))
+  } 
+
+  ebe() ;
+  
+  
+  
+  console.log("3");
  console.log("4");
