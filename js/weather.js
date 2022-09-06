@@ -4,7 +4,7 @@ const key = "6ad36569e2b8df0d766a785446837af0";
 const form = document.querySelector("#container form");
 const input = document.querySelector("#cInp");
 const ul = document.querySelector("#ul");;
-
+const notfound = document.queryCommandIndeterm("#h3");
 
 form.addEventListener("submit" , e =>{
 e.preventDefault();
@@ -36,5 +36,9 @@ fetch(url)
     li.innerHTML= markup;
     ul.appendChild(li)
 })
+.catch(() =>{
+    h3.innerHTML ="city not found!!!";
+})
+
 
 })
