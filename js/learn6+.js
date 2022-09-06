@@ -5,3 +5,15 @@ console.log(family);
 nf()
 console.log(age);
 A(666,111)
+
+
+
+
+//try catch learning
+
+try {
+    const h1 = document.querySelector("h21");
+        h1.innerHTML="ya allah"
+    }catch(error) {
+        console.log("Error");
+    }
