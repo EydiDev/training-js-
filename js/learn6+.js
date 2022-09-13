@@ -80,10 +80,34 @@ console.log("-------------------");
 //this keyword
 const userData = {
     userName: "mamad",
-    family : "eyhdi",
+    family : "eydi",
     sayHi : function () {
         console.log(`hi ${this.userName}`);
         console.log(this);
       }
 }
 userData.sayHi();
+
+//class : a machine for create object-oriented
+//function in class is method
+//constructor mean is creator
+class Car {
+    constructor (name , speed , color) {
+        this.name = name;
+        this.color = color;
+        this.speed = speed; 
+
+    }
+    sped (ss) {
+        console.log(this.name);
+        console.log(this.color);
+        console.log(ss);
+    }
+}
+const bmwCar = new Car("bmwX6" , "200kmh" , "white");
+const dodgeCar = new Car("dodge Challenger" , "300kmh" , "black");
+console.log(bmwCar);
+bmwCar.sped();
+console.log(dodgeCar);
+dodgeCar.sped("200kmh");
+
