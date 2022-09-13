@@ -76,3 +76,14 @@ console.log("-------------------");
     console.log(count());
     console.log(count());
 // end of closure 
+
+//this keyword
+const userData = {
+    userName: "mamad",
+    family : "eyhdi",
+    sayHi : function () {
+        console.log(`hi ${this.userName}`);
+        console.log(this);
+      }
+}
+userData.sayHi();
